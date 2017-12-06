@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">  
+  <service>  
+    <name>WSHello</name>  
+    <namespace>http://www.zgh.com/</namespace>  
+    <serviceClass>com.zgh.xfire.IWSHello</serviceClass>  
+    <implementationClass>com.zgh.xfire.WSHelloImpl</implementationClass>  
+  </service>  
+</beans>

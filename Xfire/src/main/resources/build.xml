@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Xfire" basedir="X:/resource/eclipse_workspace/Xfire" default="gen-webservice">
+	 
+	<path id="project-classpath">
+		<fileset  file="X:/local/repo/Repository/">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<taskdef name="wsgen" classname="org.codehaus.xfire.gen.WsGenTask" classpathref="project-classpath" />
+	<target name="gen-webservice">
+		<wsgen outputDirectory="D:\JAVA\WSHello\Client\" wsdl="http://localhost:8080/Xfire/services/WSHello?wsdl" package="com.zgh.xfire.client" overwrite="true" />
+	</target>
+</project>
